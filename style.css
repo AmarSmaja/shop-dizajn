@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    box-shadow: 0px 1px 1px rgb(179, 179, 179);
+    display: flex;
+}
+
+.stickyheader {
+    z-index: 1000;
+    background-color: white;
+    transition: .6s ease;
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-shadow: 2px 2px 4px rgb(179, 179, 179);
+}
+
+.logo {
+    width: 20%;
+    height: auto;
+}
+
+.removelogo {
+    display: none;
+}
+
+.left-header {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-header a {
+    margin-left: 10%;
+}
+
+.right-header {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.removeLeft { 
+    display: none;
+}
+
+.centerHeader { 
+    width: 100%;
+}
+
+.right-header ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.right-header ul li a {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.right-header ul li a:hover {
+    transition: .35s ease;
+    padding-bottom: 19px;
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(255, 46, 46);
+    border-top: 1px solid rgb(255, 46, 46);
+    color: rgb(255, 46, 46);
+    font-weight: 700;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.main {
+    height: 90vh;
+    background-image: url('./img/pexels-dayvison-tadeu-4053668.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+.main-flex {
+    width: 100%;
+    height: 30vh;
+}
+
+.btn {
+    width: 15%;
+    height: 8vh;
+    border-radius: 5px;
+    border: 3px solid white;
+    background-color: transparent;
+}
+
+.shopmain {
+    padding: 5%;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0.4rem;
+}
+
+.main-shop {
+    background-image: url('./img/pexels-jordan-hyde-1032109.jpg');
+    background-size: cover;
+    background-position: center;
+
+    width: 95%;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    background-color: red;
+    /*
+    border-radius: 20px;*/
+}
+
+.naslov {
+    height: 10vh;
+
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 16px;
+}
+
+.naslov h1 {
+    margin-left: 10%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.prva-linija {
+    width: 100%;
+    height: 32vh;
+
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.2rem;
+}
+
+.shoe-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+/*
+.shoe-1:hover{
+    width: 100%;
+}
+*/
+
+.shoe-1 img {
+    width: 70%;
+}
+
+.druga-linija {
+    width: 100%;
+    height: 32vh;
+
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    background-image: url('./img/pexels-saad-alawi-9986256.jpg');
+    background-position-y: 80%;
+    background-size: cover;
+    /*border-radius: 10px;*/
+}
+
+.featured {
+    padding: 4%;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10% 10% 55% 15% 10%;
+    grid-gap: 0.4rem;
+}
+
+.naslov-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.selector ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.selector ul li a {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.selector ul li .selected {
+    color: rgb(184, 0, 0);
+    border-bottom: 2px solid rgb(184, 0, 0);
+}
+
+.selector ul li .selected:hover {
+    transition: .3s ease;
+    padding-bottom: 5px;
+}
+
+.shop-linija {
+    background-image: url('./img/nike-1.png');
+    background-position: center;
+    background-size: cover;
+    
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.info p {
+    margin-left: 10%;
+}
+
+.cijena {
+    color: red;
+}
+
+.button-linija {
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.button-linija a {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 5vh;
+    background-color: red;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.button-linija a:hover {
+    transition: .2s ease-in-out;
+    border: 2px solid rgb(207, 0, 0);
+    color: red;
+}
